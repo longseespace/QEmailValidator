@@ -1,4 +1,5 @@
 #include "qemailvalidator.h"
+#include <QtQml>
 
 QEmailValidator::QEmailValidator() {}
 
@@ -13,7 +14,7 @@ QValidator::State QEmailValidator::validate(QString &input, int &) const {
 }
 
 static void registerTypes() {
-    qmlRegisterType<MyType>("QEmailValidator", 1, 0, "QEmailValidator");
+  qmlRegisterType<QEmailValidator>("QEmailValidator", 1, 0, "QEmailValidator");
 }
 
 Q_COREAPP_STARTUP_FUNCTION(registerTypes)
