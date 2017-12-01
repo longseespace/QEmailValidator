@@ -1,0 +1,20 @@
+{
+  "author": {
+    "email": "long@podzim.co",
+    "name": "Long Nguyen"
+  },
+  "dependencies": [],
+  "description": "A class that provides a QValidator to validate emails",
+  "license": "MIT",
+  "name": "co.podzim.qemailvalidator",
+  "repository": {
+    "type": "GITHUB",
+    "url": "https://github.com/longseespace/QEmailValidator.git"
+  },
+  "version": {
+    "fingerprint": "",
+    "label": "1.0.0",
+    "revision": ""
+  },
+  "webpage": "https://github.com/longseespace/QEmailValidator"
+}
