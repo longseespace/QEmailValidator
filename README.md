@@ -17,6 +17,25 @@ To install:
 3. Include qpm to your project by adding `include(vendor/vendor.pri)` to your
    `.pro` file
 
+## QML Usage
+
+```
+import QEmailValidator 1.0
+
+TextField {
+  id: emailField
+  placeholderText: qsTr("Email")
+  validator: QEmailValidator{}
+}
+
+Label {
+  id: emailError
+  visible: emailField.acceptableInput // only show if email is invalid
+  color: "red"
+  text: "Invalid Email"
+}
+```
+
 Check their
 [GitHub - Usage for App Developers](https://github.com/Cutehacks/qpm/blob/master/README.md#usage-for-app-developers)
 to learn more about qpm.
